@@ -1,0 +1,124 @@
+.footer{
+     background-color: $greycolor;
+     overflow-x: hidden;
+     padding-top: 30px;
+     margin-top: 50px;
+     .gallery,.details,.contact{
+        float: $float-left;
+      }
+      .gallery{
+        
+        @media #{$minsmall}{
+           width: 100%;
+        }
+        @media #{$minmedium}{
+           width: 50%;
+        }
+        .img-box{
+            overflow: hidden;
+            margin-bottom: 20px;
+            img{
+              @media #{$minsmall}{
+                 float: $float-left;
+              }
+        
+               width: 150px;
+               height: 150px;                
+            }
+            .text{
+            @media #{$minsmall} {
+                float: $float-left;
+                margin-right: 15px;
+                  margin-left: 15px;
+              width: calc(100% - 180px);
+              }
+              
+              h4{
+                color: $redcolor;
+                margin: 20px 0 0;
+              }
+              p{
+                  color: #888;
+                  line-height: 1.8;
+                  margin-top: 5px;
+              }
+            }
+        }
+       
+      }
+      .details{
+        @media #{$minsmall} {
+            width: 50%;
+          }
+        
+          @media #{$minmedium} {
+            width: 25%;
+          }
+        ul{
+           color: #888;
+           line-height: 1.9;
+           li{
+            span{
+                color: $redcolor;
+            }
+           }
+        } 
+        h4{
+          color: #888;
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+        p{
+            color: #888;
+            margin-top: 8px;
+        }
+      }
+      .contact{
+        @media #{$minsmall} {
+            width: 50%;
+          }
+        
+          @media #{$minmedium} {
+            width: 25%;
+          }
+          
+        input[type="text"],
+        input[type="email"],
+        textarea{
+             border: 1px solid #888;
+             padding: 10px;
+             margin-bottom: 5px;
+             border-radius: 10px; 
+             width: 100%;
+        }
+        textarea{
+            height: 140px;
+        }
+      }
+      .section-title{
+        color: #444;
+        font-weight: normal;
+      }
+      .copyright{
+        padding: 25px 0;
+        border-top: 1px solid #c5c5c5;
+        color: #888;
+        overflow: hidden;
+        margin-top: 30px;
+        .text ,.author{
+          @media #{$minsmall}{
+                float: $float-left;
+                  width: 50%;
+          }
+          @media #{$maxmobile}{
+            margin-bottom: 10px;
+          }
+        }
+        .author{
+          @media #{$minsmall} {
+              text-align: $text-right;
+            }
+            
+        }
+      }
+}

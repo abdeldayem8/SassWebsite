@@ -1,0 +1,141 @@
+.slider{
+    blockquote{
+        font: {
+            size: 20px;
+            weight: bold;
+            style: italic;
+            family: Tahoma,Arial;
+        }
+        line-height: 1.6;
+        text-align: center;
+        color: #5e5e5e;
+        width: 80%;
+        margin: 30px auto;
+    }
+    img{
+     max-width: 100%;
+    }
+    .bullets{
+        text-align: center;
+        li{
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          background-color: $greycolor;
+          border-radius: 50%;
+          border: 2px solid $greycolor;
+          cursor: pointer;
+          &.active,
+          &:hover{
+            border: 2px solid #333;
+            background-color: #FFF;
+          }
+        }
+    }
+}
+
+// start services
+
+.services{
+    .service-box{
+        @media #{$minmedium}{
+            float: $float-left;
+                width: (100% / 3);
+                &:not(:last-of-type) {
+                        padding-right: 20px;
+                    }
+        }
+        @media #{$maxmobile}{
+            i{
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        .service-title{
+            color: #666;
+            i {
+               font-size: 30px;
+               position: relative;
+               top: 4px;
+               margin-right: 5px;
+            }
+        }
+        .service-desc{
+            color: #777;
+            line-height: 1.5;
+        }
+        .link{
+            color: $redcolor;
+            text-decoration: none;
+        }
+    }
+}
+
+// start our-players
+.players {
+    .playerbox{
+            @media #{$minsmall}{
+            float: $float-left;
+            width: (100% / 2);
+            text-align: center;
+            margin-bottom: 20px;
+            }
+                 @media #{$minmedium} {
+                    float: $float-left;
+                width: (100% / 3);
+                        text-align: $text-left;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        }
+               @media #{$minlarge} {
+                                                      
+                          width: (100% /5);
+                                   }
+              @media #{$maxmobile}{
+                margin-bottom: 20px;
+              }                     
+        
+        img{
+            max-width: 100%;
+        }
+
+        .player-title {
+            color: #666;
+            font-weight: normal;
+            span{
+                font-weight: bold;
+            }
+        }
+
+        p {
+            color: #777;
+            line-height: 1.5;
+        }
+
+        a {
+            color: $redcolor;
+            text-decoration: none;
+        }
+    }
+}
+// start photos
+.imgs{
+    .card{
+        @media #{$minsmall}{
+        float: $float-left;
+            width: (94% / 3);
+            &:not(:last-of-type) {
+                margin-right: 3%;
+            }
+           
+        }
+                 @media #{$maxmobile} {
+                     margin-bottom: 10px;
+                 }
+
+        
+        img{
+            max-width: 100%;
+        }
+    }
+}
